@@ -1,0 +1,41 @@
+.mainSec > * {
+  padding-left: 0;
+  padding-right: 0;
+}
+.siderBrd {
+  border-bottom: 3px solid rgba(128, 128, 128, 0.2);
+  width: 100%;
+}
+.logoImg {
+  width: 120px;
+  height: 64px;
+}
+
+.iconColor a svg {
+  color: var(--main-color);
+  font-size: 30px;
+}
+
+@media only screen and (min-width: 700px) {
+  .siderBrd {
+    min-height: 100vh;
+    width: unset;
+  }
+  .siderBrd {
+    border-right: 3px solid rgba(128, 128, 128, 0.2);
+    border-bottom: none;
+  }
+  .logoImg {
+    width: 120px;
+    height: 70px;
+  }
+  .activeLink {
+    width: 104%;
+    background-color: var(--active-color);
+    border-right: 3px solid var(--main-color);
+  }
+  .iconColor a svg {
+    color: var(--main-color);
+    font-size: 30px;
+  }
+}

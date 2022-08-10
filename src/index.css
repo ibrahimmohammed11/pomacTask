@@ -1,0 +1,60 @@
+@font-face {
+  font-family: "NeusaNextPro";
+  src: local("NeusaNextPro"),
+    url("./Font/NeusaNextPro-Regular.ttf") format("truetype");
+}
+body {
+  margin: 0;
+  font-family: "NeusaNextPro";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  --main-color: #9175d9;
+  --sec-color: rgba(156, 158, 254, 0.8);
+  --active-color: rgba(156, 158, 254, 0.3);
+}
+
+/* ------------------------global-------------------- */
+.d_flex_between {
+  display: flex;
+  justify-content: space-between;
+}
+.d_flex_center {
+  display: flex;
+  align-items: center;
+}
+.mainColor {
+  color: var(--main-color);
+}
+.mainBgColor {
+  background-color: var(--main-color);
+  color: #fff;
+}
+
+.imgHeight {
+  height: 180px;
+}
+.navbar-collapse {
+  margin-top: 20px;
+}
+@media only screen and (max-width: 700px) {
+  .flex-sm-column {
+    flex-direction: row !important;
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 700px) {
+  .flex-sm-column {
+    flex-direction: column !important;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .navbar-brand {
+    display: none;
+  }
+  .navbar-collapse {
+    margin-top: unset;
+  }
+}

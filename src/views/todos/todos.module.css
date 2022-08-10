@@ -1,0 +1,83 @@
+.todoBg {
+  background-color: rgba(156, 158, 254, 0.1);
+  min-height: calc(100vh - 70px);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.addTaskBtn,
+.addTaskBtn:hover {
+  background-color: var(--main-color);
+  color: #fff;
+  width: 130px;
+}
+
+.mainPageSt {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-column-gap: 10px;
+}
+
+.columnStyle {
+  width: 300px;
+  margin-right: 20px;
+  color: var(--main-color);
+  background-color: #fff;
+  margin-bottom: 15px;
+  height: fit-content;
+}
+.secWidth::-webkit-scrollbar {
+  width: 1px;
+  height: 7px;
+  cursor: pointer;
+}
+.secWidth::-webkit-scrollbar-thumb {
+  background: var(--main-color);
+  border-radius: 4px;
+  transition: all 1s;
+}
+
+.secWidth::-webkit-scrollbar-thumb:hover {
+  background: var(--main-color);
+}
+
+.secWidth {
+  max-width: calc(100vw - 30px);
+  overflow-x: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.addColumnBtn,
+.addColumnBtn:hover,
+.addColumnBtn:focus {
+  background-color: var(--sec-color);
+  color: #fff;
+  width: 100%;
+  display: none;
+}
+.addColumnBtn1,
+.addColumnBtn1:hover,
+.addColumnBtn1:focus {
+  background-color: var(--sec-color);
+  color: #fff;
+  width: 100%;
+  display: block;
+  margin-bottom: 20px;
+}
+@media only screen and (min-width: 700px) {
+  .secWidth {
+    max-width: calc(100vw - 200px);
+  }
+}
+@media only screen and (min-width: 1300px) {
+  .secWidth {
+    max-width: 1000px;
+  }
+  .addColumnBtn,
+  .addColumnBtn:hover {
+    display: block;
+  }
+  .addColumnBtn1,
+  .addColumnBtn1:hover {
+    display: none;
+  }
+}
